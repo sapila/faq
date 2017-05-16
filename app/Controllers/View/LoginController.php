@@ -49,6 +49,6 @@ class LoginController extends AbstractViewController
         }
 
         $_SESSION['user'] = $found['id'];
-
+        header('Location: /questions');
     }
 }

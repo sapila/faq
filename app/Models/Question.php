@@ -16,10 +16,11 @@ class Question extends Model
 
     public function getQuestions()
     {
-        $statement = $this->db->prepare('SELECT * FROM ' .$this->table);
-
-        //INNER JOIN answers ON '.$this->table .'.id = answers.question_id');
+        $statement = $this->db->prepare('SELECT * FROM ' .$this->table .
+            ' INNER JOIN answers ON '.$this->table .'.id = answers.question_id' .
+            ' INNER JOIN categories ON ' . $this->table .'.category_id = categories.id'
+        );
         $statement->execute();
-        return $statement->fetch(PDO::FETCH_ASSOC);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 }

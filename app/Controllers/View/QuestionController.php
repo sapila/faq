@@ -10,18 +10,16 @@ use App\Models\Question;
  */
 
 
-class QuestionController
+class QuestionController extends AbstractViewController
 {
     public function show()
     {
         $question = new Question();
-        $json = json_encode($question->getQuestions());
-        var_dump($json);
-        return;
+        $this->render('questions', [ 'entries' => $question->getQuestions()]);
     }
 
-    public function hiall($var1, $var2)
+    public function add()
     {
-        echo 'this is hi ALL ALL ALL <br> <br> ' . $var1 .' <br>'. $var2 . ' <br>' . PHP_EOL;
+        //echo 'this is hi ALL ALL ALL <br> <br> ' . $var1 .' <br>'. $var2 . ' <br>' . PHP_EOL;
     }
 }
