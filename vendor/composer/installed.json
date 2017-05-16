@@ -1,0 +1,59 @@
+[
+    {
+        "name": "symfony/templating",
+        "version": "v3.2.8",
+        "version_normalized": "3.2.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/templating.git",
+            "reference": "49c9e205a03c62900eeab242215f05fc18460b7c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/templating/zipball/49c9e205a03c62900eeab242215f05fc18460b7c",
+            "reference": "49c9e205a03c62900eeab242215f05fc18460b7c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0"
+        },
+        "suggest": {
+            "psr/log": "For using debug logging in loaders"
+        },
+        "time": "2017-04-12T14:13:17+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Templating\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Templating Component",
+        "homepage": "https://symfony.com"
+    }
+]

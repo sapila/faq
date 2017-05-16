@@ -1,0 +1,12 @@
+{
+    "name": "root/public",
+    "type": "project",
+    "require": {
+        "symfony/templating": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+	}
+    }
+}
